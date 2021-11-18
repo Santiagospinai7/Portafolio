@@ -17,7 +17,7 @@ const ServiceSection = () => {
     const [element, controls] = UseScroll();
     return (
         <Services variants={fade} animate={controls} initial="hidden" ref={element}>
-            <Description>
+            <Description>git 
                 <h2>High <span>quality</span> services</h2>
                 <Cards>
 
