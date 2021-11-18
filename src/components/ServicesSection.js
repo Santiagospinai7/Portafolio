@@ -16,7 +16,12 @@ import { UseScroll } from './useScroll';
 const ServiceSection = () => {
     const [element, controls] = UseScroll();
     return (
-        <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+        <Services 
+            variants={fade} 
+            animate={controls} 
+            initial="hidden" 
+            ref={element}
+        >
             <Description>git 
                 <h2>High <span>quality</span> services</h2>
                 <Cards>
@@ -74,6 +79,9 @@ const Services = styled(About)`
 const Cards = styled.div`
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1300px){
+        justify-content: center;
+    } 
 `;
 
 const Card = styled.div`
